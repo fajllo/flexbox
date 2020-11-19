@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  display: flex;
+  background-image: url('ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+  height: 60vh;
+  /*  */
+  background-position: center center;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+a {
+  margin-top: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 2em;
+  background-color: rgba(240, 236, 236, 0.2);
+  transition: 0.3s;
+}
+a:hover {
+  background-color: rgba(240, 236, 236, 0.6);
+}
+header p {
+  margin: 0 2rem;
+}
+main {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrpa;
+}
+main img {
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  margin: 0.5rem;
+}
+main img:hover {
+  border: 1px solid black;
+}
+@media screen and(max-width:1000px) {
+  main {
+    flex-direction: column;
+  }
+}
+.lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: centers;
+}
+.lorem p {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: rgba(218, 218, 218, 0.3);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+footer {
+  background-color: rgba(218, 218, 218, 0.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+footer span {
+  display: block;
+  padding: 1rem;
+}
+footer span:hover {
+  background-color: rgba(218, 218, 218, 0.4);
+}
