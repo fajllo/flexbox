@@ -82,3 +82,11 @@ footer span {
 footer span:hover {
   background-color: rgba(218, 218, 218, 0.4);
 }
+@media screen and(max-width:500px) {
+  header {
+    background-size: cover;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
