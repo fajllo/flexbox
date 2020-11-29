@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: rgb(225, 197, 241);
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+body {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background: rgba(242, 240, 246, 0.9);
+}
+
+nav {
+  height: 10vh;
+  background: rgb(39, 38, 41);
+}
+
+.ul-nav {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  color: rgb(100, 59, 124);
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+.a-nav {
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+}
+.a-nav:hover {
+  background: rgb(27, 26, 27);
+}
+/* responisive navbar */
+@media screen and (max-width: 768px) {
+  .ul-nav {
+    position: fixed;
+    background: rgb(100, 59, 124);
+    flex-direction: column;
+    width: 100vw;
+    /* display: none; */
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease;
+  }
+  .line {
+    width: 2rem;
+    height: 3px;
+    background: white;
+    margin: 3px;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    padding: 2rem;
+    z-index: 2;
+  }
+  .ul-nav.open {
+    clip-path: circle(1100px at 90% -15%);
+    -webkit-clip-path: circle(1100px at 90% -15%);
+  }
+
+  .a-nav:hover {
+    background: rgb(147, 82, 185);
+  }
+}
+
+/* main */
+.container {
+  display: flex;
+  margin-top: 2rem;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  margin: 2rem;
+  resize: none;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #4f5152, -0.5rem -0.5rem 0.5rem #d9e0e0;
+}
+.copy {
+  outline: none;
+  border: noen;
+  font-size: 3rem;
+  background: rgb(147, 82, 185);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.copy:hover {
+  background: rgb(183, 115, 223);
+  color: white;
+}
