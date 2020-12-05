@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
@@ -16,19 +18,29 @@
         <div class="line"></div>
       </div>
       <ul class="ul-nav">
-        <li class="li-nav"><a href="" class="a-nav">About</a></li>
-        <li class="li-nav"><a href="" class="a-nav">Contact</a></li>
-        <li class="li-nav"><a href="" class="a-nav">Project</a></li>
-        <li class="li-nav"><a href="" class="a-nav">LogIn</a></li>
+        <li class="li-nav "><a href="#" class="a-nav current">Home</a></li>
+        <li class="li-nav"><a href="#" class="a-nav">About</a></li>
+        <li class="li-nav"><a href="#" class="a-nav">Contact</a></li>
+        <li class="li-nav"><a href="#" class="a-nav">Project</a></li>
+        <li class="li-nav"><a href="#" class="a-nav">LogIn</a></li>
       </ul>
     </nav>
+    <section class="picker">
+      <div class ="pick-cypher">base 64</div>
+      <div class ="pick-cypher">base 128</div>
+      <div class ="pick-cypher">md5</div>
+      <div class ="pick-cypher">cezar</div>
+      <div class ="pick-cypher">normal</div>
+      <div class ="pick-cypher">item3</div>
+
+    </section>
     <section class="container">
         <h1>Wpisz tekst do zaszyfrowania</h1>
       <textarea
         name=""
         id=""
-        cols="30"
-        rows="5"
+        cols="25"
+        rows="4"
         class="text plane-text"
         placeholder ="Your secret text..."
         "
@@ -37,14 +49,15 @@
       <textarea
         name=""
         id=""
-        cols="30"
-        rows="5"
+        cols="25"
+        rows="4"
         class="text encrypted"
         placeholder="Your encryption..."
         readonly
       ></textarea>
       <button class = "copy">COPY!</button>
     </section>
+  
     <script src="app.js"></script>
   </body>
 </html>
